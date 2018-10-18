@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableUpdateDfeSpektakEmployeurs extends Migration
+class BuilderTableUpdateDavindiskoSpektakEmployeurs extends Migration
 {
     public function up()
     {

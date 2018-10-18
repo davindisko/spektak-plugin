@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableDeleteDfeSpektakConfig extends Migration
+class BuilderTableDeleteDavindiskoSpektakConfig extends Migration
 {
     public function up()
     {
