@@ -3,11 +3,11 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateDfeSpektakEmployeur extends Migration
+class BuilderTableCreateDavindiskoSpektakEmployeur extends Migration
 {
     public function up()
     {
-        Schema::create('dfe_spektak_employeur', function($table)
+        Schema::create('davindisko_spektak_employeur', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
@@ -19,6 +19,6 @@ class BuilderTableCreateDfeSpektakEmployeur extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('dfe_spektak_employeur');
+        Schema::dropIfExists('davindisko_spektak_employeur');
     }
 }

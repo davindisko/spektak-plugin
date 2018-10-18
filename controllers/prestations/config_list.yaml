@@ -1,4 +1,4 @@
-list: $/dfe/spektak/models/prestation/columns.yaml
+list: $/davindisko/spektak/models/prestation/columns.yaml
 modelClass: Davindisko\Spektak\Models\Prestation
 title: Prestations
 noRecordsMessage: 'backend::lang.list.no_records'
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'dfe/spektak/prestations/update/:id'
+recordUrl: 'davindisko/spektak/prestations/update/:id'

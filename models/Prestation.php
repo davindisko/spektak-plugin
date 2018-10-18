@@ -24,7 +24,7 @@ class Prestation extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'dfe_spektak_prestations';
+    public $table = 'davindisko_spektak_prestations';
 
     public $belongsTo = [
         'employeur' => 'Davindisko\Spektak\Models\Employeur'
