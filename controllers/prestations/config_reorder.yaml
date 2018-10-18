@@ -1,0 +1,4 @@
+title: Prestations
+modelClass: DFE\Spektak\Models\Prestation
+toolbar:
+    buttons: reorder_toolbar

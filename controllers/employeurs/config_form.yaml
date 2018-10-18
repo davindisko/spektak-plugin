@@ -1,0 +1,10 @@
+name: Employeurs
+form: $/dfe/spektak/models/employeur/fields.yaml
+modelClass: DFE\Spektak\Models\Employeur
+defaultRedirect: dfe/spektak/employeurs
+create:
+    redirect: 'dfe/spektak/employeurs/update/:id'
+    redirectClose: dfe/spektak/employeurs
+update:
+    redirect: dfe/spektak/employeurs
+    redirectClose: dfe/spektak/employeurs

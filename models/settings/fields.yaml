@@ -1,0 +1,30 @@
+fields:
+    date_renew:
+        span: auto
+        label: 'Date renouvellement'
+        type: datepicker
+        mode: date
+    reglementation:
+        span: auto
+        label: 'Règlementation en vigueur'
+        type: dropdown
+        options:
+            2014: 'Convention du 14/05/2014'
+            2018: 'Circulaire du 07/02/2018'
+    donnees2014:
+        label: "Données de calcul pour convention 2014"
+        span: full
+        type: section
+        trigger:
+            action: show
+            field: reglementation
+            condition: value[2014]
+    smic:
+        span: left
+        label: 'SMIC horaire brut'
+        type: number
+        comment: "Dernière valeur en date au 1er janvier"
+        trigger:
+            action: show
+            field: reglementation
+            condition: value[2014]

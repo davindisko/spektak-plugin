@@ -1,0 +1,12 @@
+list: $/dfe/spektak/models/prestation/columns.yaml
+modelClass: DFE\Spektak\Models\Prestation
+title: Prestations
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dfe/spektak/prestations/update/:id'

@@ -1,0 +1,4 @@
+title: Employeurs
+modelClass: DFE\Spektak\Models\Employeur
+toolbar:
+    buttons: reorder_toolbar
