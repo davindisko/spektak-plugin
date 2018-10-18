@@ -1,0 +1,82 @@
+columns:
+    date_start:
+        label: 'Date début'
+        type: date
+        sortable: true
+    date_end:
+        label: 'Date fin'
+        type: date
+    title:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: true
+    employeur:
+        label: Employeur
+        type: text
+        searchable: true
+        sortable: true
+        select: nom
+        relation: employeur
+    location:
+        label: Lieu
+        type: text
+        searchable: true
+        sortable: true
+    is_published:
+        label: Publié
+        type: switch
+        sortable: true
+    important:
+        label: Important
+        type: switch
+        sortable: true
+    nb_cachets:
+        label: 'Cachets'
+        type: number
+        sortable: true
+    nb_heures:
+        label: 'Heures'
+        type: number
+        sortable: true
+    salaire_brut:
+        label: 'Salaire brut'
+        type: number
+        sortable: true
+    salaire_net:
+        label: 'Salaire net'
+        type: number
+        sortable: true
+    net_imposable:
+        label: 'Net imposable'
+        type: number
+        sortable: true
+    aem:
+        label: 'AEM'
+        type: switch
+        sortable: true
+    contrat:
+        label: 'Contrat'
+        type: switch
+        sortable: true
+    conges_spectacle:
+        label: 'Congés spectacle'
+        type: switch
+        sortable: true
+    fiche_paie:
+        label: 'Fiche de paie'
+        type: switch
+        sortable: true
+    paiement:
+        label: 'Paiement'
+        type: switch
+        sortable: true
+    type_paiement:
+        label: 'Type paiement'
+        type: text
+        sortable: true
+        searchable: true
+    date_paiement:
+        label: 'Date de paiement'
+        type: date
+        sortable: true

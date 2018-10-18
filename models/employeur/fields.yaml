@@ -1,0 +1,15 @@
+fields:
+    nom:
+        label: Nom
+        span: auto
+        type: text
+    adresse:
+        label: Adresse
+        size: ''
+        span: left
+        type: textarea
+    contact:
+        label: Contact
+        size: ''
+        span: right
+        type: textarea

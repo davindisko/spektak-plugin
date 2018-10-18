@@ -1,0 +1,20 @@
+plugin:
+    name: 'dfe.spektak::lang.plugin.name'
+    description: 'dfe.spektak::lang.plugin.description'
+    author: 'David Ferreira'
+    icon: oc-icon-calculator
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Spektak
+        url: dfe/spektak/prestations
+        icon: icon-simplybuilt
+        sideMenu:
+            side-menu-item:
+                label: Employeurs
+                url: dfe/spektak/employeurs
+                icon: icon-users
+            side-menu-item2:
+                label: Prestations
+                url: dfe/spektak/prestations
+                icon: icon-calendar

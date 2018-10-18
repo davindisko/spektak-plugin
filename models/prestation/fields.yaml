@@ -1,0 +1,119 @@
+fields:
+    date_start:
+        label: 'Date de début'
+        mode: date
+        span: left
+        type: datepicker
+    date_end:
+        label: 'Date de fin'
+        mode: date
+        span: auto
+        type: datepicker
+    title:
+        label: Titre
+        span: left
+        type: text
+    location:
+        label: Lieu
+        span: right
+        type: text
+    link:
+        label: 'Lien web'
+        span: auto
+        placeholder: 'https://'
+        type: text
+        comment: Optional
+    is_published:
+        label: Publier
+        span: left
+        default: 1
+        type: checkbox
+        comment: 'Apparait sur le site public'
+    important:
+        label: Important
+        span: right
+        default: 0
+        type: checkbox
+        comment: 'Mettre en valeur'
+    compta:
+        label: Comptabilité
+        span: full
+        type: section
+    employeur:
+        span: left
+        path: field_employeur_short
+        type: partial
+    nb_cachets:
+        label: 'Nombre de cachets'
+        span: left
+        type: number
+        comment: '1 cachet compte pour 12h'
+    nb_heures:
+        label: 'Nombre d''heures'
+        span: right
+        type: number
+    salaire_brut:
+        label: 'Salaire brut'
+        span: left
+        type: number
+    salaire_net:
+        label: 'Salaire net'
+        span: right
+        type: number
+    net_imposable:
+        label: 'Net imposable'
+        span: left
+        type: number
+    reception:
+        label: 'Réception des documents'
+        span: full
+        type: section
+    aem:
+        label: 'AEM'
+        span: auto
+        type: switch
+    contrat:
+        label: 'Contrat'
+        span: auto
+        type: switch
+    conges_spectacle:
+        label: 'Congés spectacle reçus'
+        span: auto
+        type: switch
+    fiche_paie:
+        label: 'Fiche de paie'
+        span: auto
+        type: switch
+    paiement:
+        label: 'Paiement'
+        span: auto
+        type: switch
+    reglement:
+        label: Paiement
+        span: full
+        type: section
+        trigger:
+            action: show
+            field: paiement
+            condition: checked
+    type_paiement:
+        label: 'Type paiement'
+        options:
+            virement: Virement
+            cheque: Chèque
+        span: left
+        default: 'Virement'
+        trigger:
+            action: show
+            field: paiement
+            condition: checked
+        type: dropdown
+    date_paiement:
+        label: 'Date de paiement'
+        mode: date
+        span: auto
+        trigger:
+            action: show
+            field: paiement
+            condition: checked
+        type: datepicker

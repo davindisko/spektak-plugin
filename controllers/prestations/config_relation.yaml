@@ -1,0 +1,9 @@
+employeur:
+    label: Employeur
+    view:
+        form: $/dfe/spektak/models/employeur/fields_short.yaml
+        toolbarButtons: create|link
+    manage:
+        form: $/dfe/spektak/models/employeur/fields.yaml
+        list: $/dfe/spektak/models/employeur/columns.yaml
+        showSearch: true

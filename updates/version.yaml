@@ -1,0 +1,20 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table dfe_spektak_employeur'
+    - builder_table_create_dfe_spektak_employeur.php
+1.0.3:
+    - 'Created table dfe_spektak_config'
+    - builder_table_create_dfe_spektak_config.php
+1.0.4:
+    - 'Created table dfe_spektak_prestations'
+    - builder_table_create_dfe_spektak_prestations.php
+1.0.5:
+    - 'Drop table dfe_spektak_config'
+    - builder_table_delete_dfe_spektak_config.php
+1.0.6:
+    - 'Updated table dfe_spektak_employeur'
+    - builder_table_update_dfe_spektak_employeurs.php
+1.0.7:
+    - 'Updated table dfe_spektak_prestations'
+    - builder_table_update_dfe_spektak_prestations.php
