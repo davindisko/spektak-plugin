@@ -21,9 +21,9 @@ class BuilderTableCreateDavindiskoSpektakPrestations extends Migration
             $table->integer('employeur_id')->nullable();
             $table->integer('nb_cachets')->nullable();
             $table->integer('nb_heures')->nullable();
-            $table->decimal('salaire_brut', 5, 2)->nullable();
-            $table->decimal('salaire_net', 5, 2)->nullable();
-            $table->decimal('net_imposable', 5, 2)->nullable();
+            $table->decimal('salaire_brut', 7, 2)->nullable();
+            $table->decimal('salaire_net', 7, 2)->nullable();
+            $table->decimal('net_imposable', 7, 2)->nullable();
             $table->boolean('aem')->nullable();
             $table->boolean('contrat')->nullable();
             $table->boolean('fiche_paie')->nullable();
