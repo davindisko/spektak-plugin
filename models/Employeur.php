@@ -24,7 +24,7 @@ class Employeur extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'dfe_spektak_employeurs';
+    public $table = 'davindisko_spektak_employeurs';
 
     public $hasMany = [
         'prestations' => ['Davindisko\Spektak\Models\Prestations', 'delete' => true]

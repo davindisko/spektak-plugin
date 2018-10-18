@@ -7,11 +7,11 @@ class BuilderTableUpdateDfeSpektakEmployeurs extends Migration
 {
     public function up()
     {
-        Schema::rename('dfe_spektak_employeur', 'dfe_spektak_employeurs');
+        Schema::rename('davindisko_spektak_employeur', 'davindisko_spektak_employeurs');
     }
     
     public function down()
     {
-        Schema::rename('dfe_spektak_employeurs', 'dfe_spektak_employeur');
+        Schema::rename('davindisko_spektak_employeurs', 'davindisko_spektak_employeur');
     }
 }

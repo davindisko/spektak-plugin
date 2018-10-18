@@ -1,10 +1,10 @@
 name: Employeurs
-form: $/dfe/spektak/models/employeur/fields.yaml
+form: $/davindisko/spektak/models/employeur/fields.yaml
 modelClass: Davindisko\Spektak\Models\Employeur
-defaultRedirect: dfe/spektak/employeurs
+defaultRedirect: davindisko/spektak/employeurs
 create:
-    redirect: 'dfe/spektak/employeurs/update/:id'
-    redirectClose: dfe/spektak/employeurs
+    redirect: 'davindisko/spektak/employeurs/update/:id'
+    redirectClose: davindisko/spektak/employeurs
 update:
-    redirect: dfe/spektak/employeurs
-    redirectClose: dfe/spektak/employeurs
+    redirect: davindisko/spektak/employeurs
+    redirectClose: davindisko/spektak/employeurs

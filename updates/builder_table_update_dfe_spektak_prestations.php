@@ -7,7 +7,7 @@ class BuilderTableUpdateDfeSpektakPrestations extends Migration
 {
     public function up()
     {
-        Schema::table('dfe_spektak_prestations', function($table)
+        Schema::table('davindisko_spektak_prestations', function($table)
         {
             $table->decimal('salaire_brut', 7, 2)->change();
             $table->decimal('salaire_net', 7, 2)->change();
@@ -17,7 +17,7 @@ class BuilderTableUpdateDfeSpektakPrestations extends Migration
     
     public function down()
     {
-        Schema::table('dfe_spektak_prestations', function($table)
+        Schema::table('davindisko_spektak_prestations', function($table)
         {
             $table->decimal('salaire_brut', 5, 2)->change();
             $table->decimal('salaire_net', 5, 2)->change();

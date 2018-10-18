@@ -7,7 +7,7 @@ class BuilderTableCreateDfeSpektakPrestations extends Migration
 {
     public function up()
     {
-        Schema::create('dfe_spektak_prestations', function($table)
+        Schema::create('davindisko_spektak_prestations', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
@@ -36,6 +36,6 @@ class BuilderTableCreateDfeSpektakPrestations extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('dfe_spektak_prestations');
+        Schema::dropIfExists('davindisko_spektak_prestations');
     }
 }

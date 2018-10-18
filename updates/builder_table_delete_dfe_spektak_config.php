@@ -7,12 +7,12 @@ class BuilderTableDeleteDfeSpektakConfig extends Migration
 {
     public function up()
     {
-        Schema::dropIfExists('dfe_spektak_config');
+        Schema::dropIfExists('davindisko_spektak_config');
     }
     
     public function down()
     {
-        Schema::create('dfe_spektak_config', function($table)
+        Schema::create('davindisko_spektak_config', function($table)
         {
             $table->engine = 'InnoDB';
             $table->date('date_anniv');

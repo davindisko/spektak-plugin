@@ -1,4 +1,4 @@
-list: $/dfe/spektak/models/employeur/columns.yaml
+list: $/davindisko/spektak/models/employeur/columns.yaml
 modelClass: Davindisko\Spektak\Models\Employeur
 title: Employeurs
 noRecordsMessage: 'backend::lang.list.no_records'
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'dfe/spektak/employeurs/update/:id'
+recordUrl: 'davindisko/spektak/employeurs/update/:id'
