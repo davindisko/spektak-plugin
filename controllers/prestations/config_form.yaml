@@ -1,6 +1,6 @@
 name: Prestations
 form: $/dfe/spektak/models/prestation/fields.yaml
-modelClass: DFE\Spektak\Models\Prestation
+modelClass: Davindisko\Spektak\Models\Prestation
 defaultRedirect: dfe/spektak/prestations
 create:
     redirect: 'dfe/spektak/prestations/update/:id'

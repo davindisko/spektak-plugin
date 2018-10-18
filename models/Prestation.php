@@ -1,4 +1,4 @@
-<?php namespace DFE\Spektak\Models;
+<?php namespace Davindisko\Spektak\Models;
 
 use Model;
 
@@ -27,6 +27,6 @@ class Prestation extends Model
     public $table = 'dfe_spektak_prestations';
 
     public $belongsTo = [
-        'employeur' => 'DFE\Spektak\Models\Employeur'
+        'employeur' => 'Davindisko\Spektak\Models\Employeur'
     ];
 }

@@ -1,4 +1,4 @@
-<?php namespace DFE\Spektak;
+<?php namespace Davindisko\Spektak;
 
 use System\Classes\PluginBase;
 
@@ -7,7 +7,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'DFE\Spektak\Components\Dashboard' => 'dashboard',
+            'Davindisko\Spektak\Components\Dashboard' => 'dashboard',
         ];
     }
 
@@ -17,7 +17,7 @@ class Plugin extends PluginBase
             'config' => [
                 'label'       => 'Spektak',
                 'description' => 'Manage configuration',
-                'class'       => 'DFE\Spektak\Models\Settings',
+                'class'       => 'Davindisko\Spektak\Models\Settings',
                 'icon'        => 'icon-simplybuilt',
                 'order'       => 500
             ]

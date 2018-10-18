@@ -1,4 +1,4 @@
 title: Employeurs
-modelClass: DFE\Spektak\Models\Employeur
+modelClass: Davindisko\Spektak\Models\Employeur
 toolbar:
     buttons: reorder_toolbar

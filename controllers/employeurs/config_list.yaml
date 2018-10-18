@@ -1,5 +1,5 @@
 list: $/dfe/spektak/models/employeur/columns.yaml
-modelClass: DFE\Spektak\Models\Employeur
+modelClass: Davindisko\Spektak\Models\Employeur
 title: Employeurs
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true

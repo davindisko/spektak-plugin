@@ -1,4 +1,4 @@
-<?php namespace DFE\Spektak\Controllers;
+<?php namespace Davindisko\Spektak\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -14,6 +14,6 @@ class Employeurs extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('DFE.Spektak', 'main-menu-item', 'side-menu-item');
+        BackendMenu::setContext('Davindisko.Spektak', 'main-menu-item', 'side-menu-item');
     }
 }

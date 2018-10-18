@@ -1,5 +1,5 @@
 list: $/dfe/spektak/models/prestation/columns.yaml
-modelClass: DFE\Spektak\Models\Prestation
+modelClass: Davindisko\Spektak\Models\Prestation
 title: Prestations
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
