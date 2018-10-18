@@ -1,4 +1,4 @@
 title: Prestations
-modelClass: DFE\Spektak\Models\Prestation
+modelClass: Davindisko\Spektak\Models\Prestation
 toolbar:
     buttons: reorder_toolbar

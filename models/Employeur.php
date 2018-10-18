@@ -1,4 +1,4 @@
-<?php namespace DFE\Spektak\Models;
+<?php namespace Davindisko\Spektak\Models;
 
 use Model;
 
@@ -27,6 +27,6 @@ class Employeur extends Model
     public $table = 'dfe_spektak_employeurs';
 
     public $hasMany = [
-        'prestations' => ['DFE\Spektak\Models\Prestations', 'delete' => true]
+        'prestations' => ['Davindisko\Spektak\Models\Prestations', 'delete' => true]
     ];
 }

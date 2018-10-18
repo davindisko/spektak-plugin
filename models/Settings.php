@@ -1,4 +1,4 @@
-<?php namespace DFE\Spektak\Models;
+<?php namespace Davindisko\Spektak\Models;
 
 use Model;
 

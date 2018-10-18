@@ -1,4 +1,4 @@
-<?php namespace DFE\Spektak\Updates;
+<?php namespace Davindisko\Spektak\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;

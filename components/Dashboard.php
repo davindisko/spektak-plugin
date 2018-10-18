@@ -1,10 +1,10 @@
 <?php
 
-namespace DFE\Spektak\Components;
+namespace Davindisko\Spektak\Components;
 
 use Cms\Classes\ComponentBase;
-use DFE\Spektak\Models\Prestation;
-use DFE\Spektak\Models\Settings;
+use Davindisko\Spektak\Models\Prestation;
+use Davindisko\Spektak\Models\Settings;
 
 class Dashboard extends ComponentBase {
 
