@@ -1,6 +1,6 @@
 plugin:
-    name: 'davindisko.spektak::lang.plugin.name'
-    description: 'davindisko.spektak::lang.plugin.description'
+    name: 'Spektak'
+    description: 'Dashboard for artists work declarations in France'
     author: 'David Ferreira'
     icon: oc-icon-calculator
     homepage: ''
