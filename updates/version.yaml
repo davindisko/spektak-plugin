@@ -2,3 +2,5 @@
     - 'Initialize plugin.'
     - builder_table_create_davindisko_spektak_employeurs.php
     - builder_table_create_davindisko_spektak_prestations.php
+1.0.2:
+    - 'Langage update'
