@@ -1,20 +1,20 @@
 plugin:
-    name: 'Spektak'
-    description: 'Dashboard for artists work declarations in France'
+    name: 'davindisko.spektak::lang.plugin.name'
+    description: 'davindisko.spektak::lang.plugin.description'
     author: 'David Ferreira'
-    icon: oc-icon-calculator
+    icon: icon-calendar-o
     homepage: ''
 navigation:
     main-menu-item:
         label: Spektak
         url: davindisko/spektak/prestations
-        icon: icon-simplybuilt
+        icon: icon-calendar-o
         sideMenu:
             side-menu-item:
-                label: Employeurs
+                label: 'davindisko.spektak::lang.employers.employers'
                 url: davindisko/spektak/employeurs
                 icon: icon-users
             side-menu-item2:
-                label: Prestations
+                label: 'davindisko.spektak::lang.performances.performances'
                 url: davindisko/spektak/prestations
                 icon: icon-calendar

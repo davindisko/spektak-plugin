@@ -1,10 +1,10 @@
 fields:
     nom:
-        label: Nom
+        label: davindisko.spektak::lang.employers.name
         span: auto
         type: text
     adresse:
-        label: Adresse
+        label: davindisko.spektak::lang.employers.address
         size: ''
         span: left
         type: textarea
