@@ -10,9 +10,9 @@
         <h2>Résumé pour la période en cours</h2>
         <div class="card border-info">
             <div class="card-body">
-                Date de renouvellement de droits : <b>{{ dashboard.nextDateRenew|localizeddate('none', 'none', 'fr',
+                Date de renouvellement de droits : <b>{{ __SELF__.nextDateRenew|localizeddate('none', 'none', 'fr',
                     'Europe/Paris', 'd MMMM YYYY')|capitalize }}</b><br />
-                Nombre d'heures à justifier : <b>{{ dashboard.nbHeuresNecessaires }} heures</b><br />
+                Nombre d'heures à justifier : <b>{{ __SELF__.nbHeuresNecessaires }} heures</b><br />
 
             </div>
         </div>
@@ -20,16 +20,16 @@
             <tbody>
                 <tr>
                     <th scope="row">Nombre d'heures réalisé ce jour</th>
-                    <td><span class="badge badge-{% if dashboard.heures.realise.total_heures > dashboard.nbHeuresNecessaires %}success{% else %}warning{% endif %}">{{
-                            dashboard.heures.realise.total_heures }} heures</span></td>
+                    <td><span class="badge badge-{% if __SELF__.heures.realise.total_heures > __SELF__.nbHeuresNecessaires %}success{% else %}warning{% endif %}">{{
+                            __SELF__.heures.realise.total_heures }} heures</span></td>
                 </tr>
                 <tr>
                     <th scope="row">Nombre d'heures prévisionnel</th>
-                    {% set hManq = dashboard.nbHeuresNecessaires - dashboard.heures.previsionnel.total_heures %}
+                    {% set hManq = __SELF__.nbHeuresNecessaires - __SELF__.heures.previsionnel.total_heures %}
                     {% set cManq = hManq / 12 %}
                     <td>
-                        <span class="badge badge-{% if dashboard.heures.previsionnel.total_heures >= dashboard.nbHeuresNecessaires %}success{% else %}danger{% endif %}">{{
-                            dashboard.heures.previsionnel.total_heures }} heures</span>
+                        <span class="badge badge-{% if __SELF__.heures.previsionnel.total_heures >= __SELF__.nbHeuresNecessaires %}success{% else %}danger{% endif %}">{{
+                            __SELF__.heures.previsionnel.total_heures }} heures</span>
                         {% if hManq > 0 %}
                         <span class="ml-1 small">({{hManq}} heures manquantes ~ {{ cManq|round }} cachets)</span>
                         {% else %}
@@ -39,24 +39,24 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row" colspan="2">Estimation ARE selon la règlementation de {{ dashboard.reglementation
+                    <th scope="row" colspan="2">Estimation ARE selon la règlementation de {{ __SELF__.reglementation
                         }}</th>
                 </tr>
                 <tr>
                     <th scope="row">Allocation journalière acquise</th>
                     <td>
-                        {{ dashboard.heures.realise.allocJournaliere|number_format(2, ',', ' ') }} euros (SR* = {{
-                        dashboard.heures.realise.salaire_reference|number_format(2, ',', ' ') }} euros)
-                        {% if dashboard.heures.realise.allocJournaliere == dashboard.allocPlancher %}<br /><small><i
+                        {{ __SELF__.heures.realise.allocJournaliere|number_format(2, ',', ' ') }} euros (SR* = {{
+                        __SELF__.heures.realise.salaire_reference|number_format(2, ',', ' ') }} euros)
+                        {% if __SELF__.heures.realise.allocJournaliere == __SELF__.allocPlancher %}<br /><small><i
                                 class="fas fa-info-circle"></i> <i>Allocation plancher</i></small>{% endif %}
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">Allocation journalière prévisionnelle</th>
                     <td>
-                        {{ dashboard.heures.previsionnel.allocJournaliere|number_format(2, ',', ' ') }} euros (SR* = {{
-                        dashboard.heures.previsionnel.salaire_reference|number_format(2, ',', ' ') }} euros)
-                        {% if dashboard.heures.previsionnel.allocJournaliere == dashboard.allocPlancher %}<br /><small><i
+                        {{ __SELF__.heures.previsionnel.allocJournaliere|number_format(2, ',', ' ') }} euros (SR* = {{
+                        __SELF__.heures.previsionnel.salaire_reference|number_format(2, ',', ' ') }} euros)
+                        {% if __SELF__.heures.previsionnel.allocJournaliere == __SELF__.allocPlancher %}<br /><small><i
                                 class="fas fa-info-circle"></i> <i>Allocation plancher</i></small>{% endif %}
                     </td>
                 </tr>
@@ -78,17 +78,17 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Salaire brut
                             <span class="badge badge-light badge-pill">{{
-                                dashboard.salaires.anneeEnCours.brut|number_format(2, ',', ' ') }} euros</span>
+                                __SELF__.salaires.anneeEnCours.brut|number_format(2, ',', ' ') }} euros</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Salaire net
                             <span class="badge badge-light badge-pill">{{
-                                dashboard.salaires.anneeEnCours.net|number_format(2, ',', ' ') }} euros</span>
+                                __SELF__.salaires.anneeEnCours.net|number_format(2, ',', ' ') }} euros</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Net imposable
                             <span class="badge badge-light badge-pill">{{
-                                dashboard.salaires.anneeEnCours.net_imposable|number_format(2, ',', ' ') }} euros</span>
+                                __SELF__.salaires.anneeEnCours.net_imposable|number_format(2, ',', ' ') }} euros</span>
                         </li>
                     </ul>
                 </div>
@@ -103,17 +103,17 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Salaire brut
                             <span class="badge badge-light badge-pill">{{
-                                dashboard.salaires.anneePrec.brut|number_format(2, ',', ' ') }} euros</span>
+                                __SELF__.salaires.anneePrec.brut|number_format(2, ',', ' ') }} euros</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Salaire net
                             <span class="badge badge-light badge-pill">{{
-                                dashboard.salaires.anneePrec.net|number_format(2, ',', ' ') }} euros</span>
+                                __SELF__.salaires.anneePrec.net|number_format(2, ',', ' ') }} euros</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Net imposable
                             <span class="badge badge-light badge-pill">{{
-                                dashboard.salaires.anneePrec.net_imposable|number_format(2, ',', ' ') }} euros</span>
+                                __SELF__.salaires.anneePrec.net_imposable|number_format(2, ',', ' ') }} euros</span>
                         </li>
                     </ul>
                 </div>
@@ -127,7 +127,7 @@
     <div class="container">
         <div class="card border-warning mb-3">
             <div class="card-body">
-                Reste à percevoir : <b>{{ dashboard.paiementAVenir.brut|number_format(2, ',', ' ') }} euros brut</b> <small>({{ dashboard.paiementAVenir.net|number_format(2, ',', ' ') }} euros net)</small>
+                Reste à percevoir : <b>{{ __SELF__.paiementAVenir.brut|number_format(2, ',', ' ') }} euros brut</b> <small>({{ __SELF__.paiementAVenir.net|number_format(2, ',', ' ') }} euros net)</small>
             </div>
         </div>
     </div>
@@ -146,7 +146,7 @@
         </nav>
         <div class="tab-content mb-5" id="nav-prestationsContent">
             <div class="tab-pane fade show active" id="nav-encours" role="tabpanel" aria-labelledby="nav-encours-tab">
-                <h5>Période en cours (depuis le {{ dashboard.nextDateRenew|date_modify("-1 year")|localizeddate('none',
+                <h5>Période en cours (depuis le {{ __SELF__.nextDateRenew|date_modify("-1 year")|localizeddate('none',
                     'none', 'fr',
                     'Europe/Paris', 'd MMMM YYYY') }})</h5>
                 <table id="tableEncours" class="display compact">
@@ -164,7 +164,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for event in dashboard.prestationsPeriode %}
+                        {% for event in __SELF__.prestationsPeriode %}
                         <tr>
                             <td>{{ event.date_start|date("d/m/Y") }}</td>
                             <td>{% if event.date_end != null %}{{ event.date_end|date("j/m/Y") }}{% endif %}</td>
@@ -207,7 +207,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for event in dashboard.prestationsPeriodePrec %}
+                        {% for event in __SELF__.prestationsPeriodePrec %}
                         <tr>
                             <td>{{ event.date_start|date("j/m/Y") }}</td>
                             <td>{% if event.date_end != null %}{{ event.date_end|date("j/m/Y") }}{% endif %}</td>
