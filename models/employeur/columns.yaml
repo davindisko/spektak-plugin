@@ -1,6 +1,6 @@
 columns:
     nom:
-        label: Nom
+        label: davindisko.spektak::lang.employers.name
         type: text
         searchable: true
         sortable: true

@@ -1,82 +1,82 @@
 columns:
     date_start:
-        label: 'Date début'
+        label: 'davindisko.spektak::lang.performances.date_start'
         type: date
         sortable: true
     date_end:
-        label: 'Date fin'
+        label: 'davindisko.spektak::lang.performances.date_end'
         type: date
     title:
-        label: Titre
+        label: 'davindisko.spektak::lang.performances.title'
         type: text
         searchable: true
         sortable: true
     employeur:
-        label: Employeur
+        label: 'davindisko.spektak::lang.employers.employer'
         type: text
         searchable: true
         sortable: true
         select: nom
         relation: employeur
     location:
-        label: Lieu
+        label: 'davindisko.spektak::lang.performances.location'
         type: text
         searchable: true
         sortable: true
     is_published:
-        label: Publié
+        label: 'davindisko.spektak::lang.performances.is_published'
         type: switch
         sortable: true
     important:
-        label: Important
+        label: 'davindisko.spektak::lang.performances.important'
         type: switch
         sortable: true
     nb_cachets:
-        label: 'Cachets'
+        label: 'davindisko.spektak::lang.performances.nb_cachets'
         type: number
         sortable: true
     nb_heures:
-        label: 'Heures'
+        label: 'davindisko.spektak::lang.performances.nb_heures'
         type: number
         sortable: true
     salaire_brut:
-        label: 'Salaire brut'
+        label: 'davindisko.spektak::lang.performances.salaire_brut'
         type: number
         sortable: true
     salaire_net:
-        label: 'Salaire net'
+        label: 'davindisko.spektak::lang.performances.salaire_net'
         type: number
         sortable: true
     net_imposable:
-        label: 'Net imposable'
+        label: 'davindisko.spektak::lang.performances.net_imposable'
         type: number
         sortable: true
     aem:
-        label: 'AEM'
+        label: 'davindisko.spektak::lang.performances.aem'
         type: switch
         sortable: true
     contrat:
-        label: 'Contrat'
+        label: 'davindisko.spektak::lang.performances.contrat'
         type: switch
         sortable: true
     conges_spectacle:
-        label: 'Congés spectacle'
+        label: 'davindisko.spektak::lang.performances.conges_spectacle'
         type: switch
         sortable: true
     fiche_paie:
-        label: 'Fiche de paie'
+        label: 'davindisko.spektak::lang.performances.fiche_paie'
         type: switch
         sortable: true
     paiement:
-        label: 'Paiement'
+        label: 'davindisko.spektak::lang.performances.paiement'
         type: switch
         sortable: true
     type_paiement:
-        label: 'Type paiement'
+        label: 'davindisko.spektak::lang.performances.type_paiement'
         type: text
         sortable: true
         searchable: true
     date_paiement:
-        label: 'Date de paiement'
+        label: 'davindisko.spektak::lang.performances.date_paiement'
         type: date
         sortable: true

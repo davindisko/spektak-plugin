@@ -175,7 +175,7 @@
                             <td class="text-center">{{event.nb_heures}}</td>
                             <td class="text-center">{{event.salaire_brut}}</td>
                             <td class="text-center">
-                                <a data-request="dashboard::onChangePaiement" data-request-confirm="Confirmer ?"
+                                <a data-request="{{__SELF__}}::onChangePaiement" data-request-confirm="Confirmer ?"
                                     data-request-data="id: '{{ event.id }}', val: '{{ event.paiement ? '0':'1' }}'"
                                     data-request-success="togglePaiement('{{event.id}}')" class="btn btn-sm btn-light">
                                     {% if event.paiement %}

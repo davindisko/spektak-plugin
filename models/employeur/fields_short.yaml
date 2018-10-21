@@ -1,5 +1,5 @@
 fields:
     nom:
-        label: Nom
+        label: davindisko.spektak::lang.employers.name
         span: auto
         type: text

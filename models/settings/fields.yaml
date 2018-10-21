@@ -1,18 +1,18 @@
 fields:
     date_renew:
         span: auto
-        label: 'Date renouvellement'
+        label: 'davindisko.spektak::lang.settings.date_renew'
         type: datepicker
         mode: date
     reglementation:
         span: auto
-        label: 'Règlementation en vigueur'
+        label: 'davindisko.spektak::lang.settings.reglementation'
         type: dropdown
         options:
-            2014: 'Convention du 14/05/2014'
-            2018: 'Circulaire du 07/02/2018'
+            2014: 'davindisko.spektak::lang.settings.convention2014'
+            2018: 'davindisko.spektak::lang.settings.circ2018'
     donnees2014:
-        label: "Données de calcul pour convention 2014"
+        label: 'davindisko.spektak::lang.settings.donnees2014'
         span: full
         type: section
         trigger:
@@ -21,9 +21,9 @@ fields:
             condition: value[2014]
     smic:
         span: left
-        label: 'SMIC horaire brut'
+        label: 'davindisko.spektak::lang.settings.smic'
         type: number
-        comment: "Dernière valeur en date au 1er janvier"
+        comment: 'davindisko.spektak::lang.settings.smic_comment'
         trigger:
             action: show
             field: reglementation
