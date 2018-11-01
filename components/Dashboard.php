@@ -17,7 +17,7 @@ class Dashboard extends ComponentBase {
     // Récupère le nombre d'heures nécessaires dans les réglages du plugin
     public function nbHeuresNecessaires() {
 
-        return Settings::get('nbHeuresNecessaires');
+        return Settings::get('nbh');
 
     }
 

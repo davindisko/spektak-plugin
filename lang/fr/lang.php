@@ -6,6 +6,7 @@
     'settings' => [
         'date_renew' => 'Date renouvellement',
         'reglementation' => 'Règlementation en vigueur',
+        'nbh' => 'Nombre d\'heures à justifier',
         'convention2014' => 'Convention du 14/05/2014',
         'circ2018' => 'Circulaire du 07/02/2018',
         'donnees2014' => 'Données de calcul pour convention 2014',

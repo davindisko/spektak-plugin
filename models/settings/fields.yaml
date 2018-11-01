@@ -11,6 +11,10 @@ fields:
         options:
             2014: 'davindisko.spektak::lang.settings.convention2014'
             2018: 'davindisko.spektak::lang.settings.circ2018'
+    nbh:
+        span: auto
+        label: 'davindisko.spektak::lang.settings.nbh'
+        type: number
     donnees2014:
         label: 'davindisko.spektak::lang.settings.donnees2014'
         span: full
