@@ -6,6 +6,7 @@
     'settings' => [
         'date_renew' => 'Renewal date',
         'reglementation' => 'Regulation',
+        'nbh' => 'Number of hours needed',
         'convention2014' => 'Agreement of May 14th, 2014',
         'circ2018' => 'Agreement of February 7th, 2018',
         'donnees2014' => 'Informations needed for agreement of 2014',
