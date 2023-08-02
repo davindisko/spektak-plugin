@@ -6,3 +6,13 @@
     - 'Langage update'
 1.0.3:
     - 'Fixed - number of hours needed on plugin settings'
+1.0.4:
+    - Created table dfe_spektak_prestations
+1.0.5:
+    - Drop table dfe_spektak_config
+1.0.6:
+    - Updated table dfe_spektak_employeur
+1.0.7:
+    - Updated table dfe_spektak_prestations
+1.0.8:
+    - composer.json update
