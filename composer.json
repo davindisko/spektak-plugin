@@ -1,7 +1,9 @@
 {
     "name": "davindisko/spektak-plugin",
+    "type": "october-plugin",
     "description": "An OctoberCMS plugin for artists work declarations in France",
     "require": {
+        "composer/installers": "~1.0",
         "php": ">=7.0"
     },
     "license": "GPL-3.0-or-later",
