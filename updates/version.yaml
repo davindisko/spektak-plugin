@@ -1,18 +1,20 @@
-1.0.1:
+v1.0.1:
     - 'Initialize plugin.'
     - builder_table_create_davindisko_spektak_employeurs.php
     - builder_table_create_davindisko_spektak_prestations.php
-1.0.2:
+v1.0.2:
     - 'Langage update'
-1.0.3:
+v1.0.3:
     - 'Fixed - number of hours needed on plugin settings'
-1.0.4:
+v1.0.4:
     - Created table dfe_spektak_prestations
-1.0.5:
+v1.0.5:
     - Drop table dfe_spektak_config
-1.0.6:
+v1.0.6:
     - Updated table dfe_spektak_employeur
-1.0.7:
+v1.0.7:
     - Updated table dfe_spektak_prestations
-1.0.8:
+v1.0.8:
     - composer.json update
+v1.0.9:
+    - version.yaml update
