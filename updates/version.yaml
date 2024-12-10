@@ -18,3 +18,5 @@ v1.0.8:
     - composer.json update
 v1.0.9:
     - version.yaml update
+v1.1.0:
+    - fix : replace localizeddate filter with format_date

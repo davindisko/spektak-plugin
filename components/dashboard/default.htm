@@ -10,8 +10,7 @@
         <h2>Résumé pour la période en cours</h2>
         <div class="card border-info">
             <div class="card-body">
-                Date de renouvellement de droits : <b>{{ __SELF__.nextDateRenew|localizeddate('none', 'none', 'fr',
-                    'Europe/Paris', 'd MMMM YYYY')|capitalize }}</b><br />
+                Date de renouvellement de droits : <b>{{ __SELF__.nextDateRenew|format_date(locale='fr')|capitalize }}</b><br />
                 Nombre d'heures à justifier : <b>{{ __SELF__.nbHeuresNecessaires }} heures</b><br />
 
             </div>
@@ -146,9 +145,7 @@
         </nav>
         <div class="tab-content mb-5" id="nav-prestationsContent">
             <div class="tab-pane fade show active" id="nav-encours" role="tabpanel" aria-labelledby="nav-encours-tab">
-                <h5>Période en cours (depuis le {{ __SELF__.nextDateRenew|date_modify("-1 year")|localizeddate('none',
-                    'none', 'fr',
-                    'Europe/Paris', 'd MMMM YYYY') }})</h5>
+                <h5>Période en cours (depuis le {{ __SELF__.nextDateRenew|date_modify("-1 year")|format_date(locale='fr') }})</h5>
                 <table id="tableEncours" class="display compact">
                     <thead>
                         <tr>
