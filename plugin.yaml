@@ -18,3 +18,7 @@ navigation:
                 label: 'davindisko.spektak::lang.performances.performances'
                 url: davindisko/spektak/prestations
                 icon: icon-calendar
+            side-menu-item3:
+                label: 'davindisko.spektak::lang.dashboard'
+                url: ../spektak
+                icon: icon-area-chart

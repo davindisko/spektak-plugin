@@ -48,5 +48,6 @@
         'cheque' => 'Chèque',
         'virement' => 'Virement',
         'date_paiement' => 'Date de paiement',
-    ]
+    ],
+    'dashboard' => 'Tableau de bord'
 ];
